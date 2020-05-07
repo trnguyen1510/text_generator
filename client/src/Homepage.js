@@ -60,16 +60,17 @@ export default class Homepage extends React.Component {
                         </div>
                 }
                 <div style={styles.buttonContainer}>
-                    <Button variant="contained" color="primary" onClick={() => this.getFirstOrderPhrase()}>Generate Phrase from First Order Model</Button>
-                    <Button variant="contained" color="primary" onClick={() => this.getSecondOrderPhrase()}>Generate Phrase from Second Order Model</Button>
+                    <Button variant="contained" color="#0F2027" onClick={() => this.getFirstOrderPhrase()}>Try this</Button>
+                    <Button variant="contained" color="#0F2027" onClick={() => this.getSecondOrderPhrase()}>Or this</Button>
                 </div>
             </div>
         )
     }
 }
+
 const styles = {
     container: {
-        backgroundColor: 'rgb(51, 51, 51)',
+        backgroundColor: '#203A43',
         width: '100vw',
         backgroundSize: 'cover',
         overflow: 'hidden',
@@ -80,7 +81,7 @@ const styles = {
         paddingBottom: 200
     },
     header: {
-        fontFamily: 'Arial',
+        fontFamily: "Comic Sans MS",
         color: 'white',
         width: '80%',
         backgroundColor: 'rgba(255, 255, 255, .1)',
@@ -99,7 +100,7 @@ const styles = {
         justifyContent: 'space-around'
     },
     phraseContainer: {
-        fontFamily: 'Arial',
+        fontFamily: "Comic Sans MS",
         color: 'white',
         fontSize: 20,
         width: '80vw',
